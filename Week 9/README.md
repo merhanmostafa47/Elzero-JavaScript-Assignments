@@ -1,0 +1,1 @@
+### :point_right:[Currying](https://javascript.info/currying-partials)

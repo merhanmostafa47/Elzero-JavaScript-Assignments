@@ -1,0 +1,37 @@
+<!-- لديك مجموعة روابط موجودة في الصفحة وأماكنها تتغير بطريقة عشوائية
+جميع الروابط تحتوي على Classes مختلفة
+المطلوب فتح الرابط الذي يحتوي على Class بإسم “open” والنص داخل الرابط هو “Elzero”
+يجب مراعاة أن ال Code سيتم كتابته داخل Script Tag في ال Head
+يفضل إستخدام ال Class List Object Methods للتدريب على ما تعلمته -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+
+</head>
+
+<body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+
+    <script>
+        let elements = document.getElementsByTagName("a");
+
+        for (let i = 0; i < elements.length; i++) {
+            let ele = elements.item(i);
+            if (ele.classList.value == "open" == true && ele.innerHTML == "Elzero") {
+                ele.click();
+                console.log("Done");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

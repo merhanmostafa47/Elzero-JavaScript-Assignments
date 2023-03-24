@@ -1,0 +1,17 @@
+/*
+*لديك Arrays تحتاج لعمل دمج لها
+المطلوب دمج ال Arrays بثلاث طرق مختلفة
+*/
+
+let numsOne = [1, 2, 3];
+let numsTwo = [4, 5, 6];
+
+console.log([...numsOne, ...numsTwo]);
+console.log(numsOne.concat(numsTwo));
+
+let arr = [];
+arr.push(...numsOne, ...numsTwo);
+console.log(arr);
+
+// Needed Output
+// [1, 2, 3, 4, 5, 6]
